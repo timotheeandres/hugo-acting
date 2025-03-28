@@ -1,0 +1,24 @@
+# Anatole theme
+
+title = 'Timothée Andres'
+author = 'Timothée Andres'
+copyright = 'Timothée Andres — 2025-{{ YEAR }}'
+profilePicture = 'images/profile.png'
+displayMode = 'dark'
+contentratio = 0.65
+
+[[socialIcons]]
+icon = "fas fa-envelope"
+title = "E-mail"
+url = "mailto:acting@timotheeandr.es"
+
+[[socialIcons]]
+icon = "fas fa-clapperboard"
+title = "Self-tape"
+url = "#"
+
+[[socialIcons]]
+icon = "fas fa-microphone-lines"
+title = "Voice demo"
+url = "#"
+

@@ -1,0 +1,9 @@
+[googleAnalytics]
+  respectDoNotTrack = true
+[vimeo]
+  enableDNT = true
+[x]
+  enableDNT = true
+[youTube]
+  privacyEnhanced = true
+

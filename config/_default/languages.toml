@@ -1,0 +1,13 @@
+[en]
+languageName = 'EN'
+languageCode = 'en'
+
+  [en.params]
+  description = 'From computer whisperer to voice actor'
+
+[fr]
+languageName = 'FR'
+languageCode = 'fr'
+
+  [fr.params]
+  description = 'De computeur-souffleur à voix-acteur'

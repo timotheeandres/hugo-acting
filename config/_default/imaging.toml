@@ -1,0 +1,4 @@
+[exif]
+  disableDate = false
+  disableLatLong = true
+

@@ -1,0 +1,10 @@
+[[main]]
+identifier = 'home'
+name = 'Accueil'
+pageRef = '/'
+
+[[main]]
+identifier = 'projects'
+name = 'Projets'
+pageRef = '/projects'
+
