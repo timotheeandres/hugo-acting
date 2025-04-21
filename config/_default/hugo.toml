@@ -1,6 +1,12 @@
 baseURL = 'https://timotheeandr.es'
 theme = 'anatole'
 defaultContentLanguage = 'en'
-publishDir = '/var/www/timotheeandr.es'
 enableGitInfo = true
 #sectionPagesMenu = 'main'
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+  [markup.goldmark.parser.attribute]
+  block = true
+  title = true

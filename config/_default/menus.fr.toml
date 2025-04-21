@@ -2,9 +2,23 @@
 identifier = 'home'
 name = 'Accueil'
 pageRef = '/'
+weight = 1
 
 [[main]]
 identifier = 'projects'
 name = 'Projets'
 pageRef = '/projects'
+weight = 2
+
+[[main]]
+identifier = 'education'
+name = 'Formation'
+pageRef = '/education'
+weight = 3
+
+[[main]]
+identifier = 'about'
+name = 'À propos'
+pageRef = '/about'
+weight = 4
 
