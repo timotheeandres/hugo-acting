@@ -12,13 +12,18 @@ icon = "fas fa-envelope"
 title = "E-mail"
 url = "mailto:acting@timotheeandr.es"
 
-[[socialIcons]]
-icon = "fas fa-clapperboard"
-title = "Showreel (coming soon...)"
-url = "#"
-
-[[socialIcons]]
-icon = "fas fa-microphone-lines"
-title = "Voice demo (coming soon...)"
-url = "#"
+#[[socialIcons]]
+#icon = "fas fa-camera"
+#title = "Photos (coming soon...)"
+#url = "#"
+#
+#[[socialIcons]]
+#icon = "fas fa-clapperboard"
+#title = "Showreel (coming soon...)"
+#url = "#"
+#
+#[[socialIcons]]
+#icon = "fas fa-microphone-lines"
+#title = "Voice demo (coming soon...)"
+#url = "#"
 
