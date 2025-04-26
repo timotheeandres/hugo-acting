@@ -1,6 +1,6 @@
 baseURL = 'https://timotheeandr.es'
 theme = 'anatole'
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'fr'
 enableGitInfo = true
 summaryLength = 10
 
