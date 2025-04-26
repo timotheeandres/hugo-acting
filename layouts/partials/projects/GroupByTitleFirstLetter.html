@@ -1,0 +1,11 @@
+{{ if not (eq .Kind "taxonomy") }}
+  {{ errorf "GroupByTitleFirstLetter requires a taxonomy as context" }}
+{{ end }}
+{{ $scratch := newScratch }}
+{{ range .Data.Terms.Alphabetical }}
+  {{ with .Page }}
+    {{ $firstLetter := substr (index (split .Title "/" | last 1) 0) 0 1 | upper }}
+    {{ $scratch.Add $firstLetter (slice .) }}
+  {{ end }}
+{{ end }}
+{{ return $scratch.Values }}

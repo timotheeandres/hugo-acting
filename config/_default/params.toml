@@ -6,6 +6,8 @@ copyright = 'Timothée Andres — 2025-{{ YEAR }}'
 profilePicture = 'images/profile.png'
 displayMode = 'dark'
 contentratio = 0.65
+disableTitleCapitalization = true
+localizedDates = true
 
 [[socialIcons]]
 icon = "fas fa-envelope"

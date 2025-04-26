@@ -6,12 +6,15 @@
       animated fadeInDown
     {{ end }}"
   >
-    {{ with .Content }}
-      <div>
-        {{ . }}
-      </div>
+    {{ with .Title }}
+      <h1>{{ . }}</h1>
     {{ end }}
-    {{ range .Data.Pages.GroupByDate "2006" }}
+
+    {{ with .Description }}
+      {{ . | $.RenderString (dict "display" "block") }}
+    {{ end }}
+
+    {{ range .Pages.GroupByDate "2006" }}
       <div class="archive__heading">{{ .Key }}</div>
       {{ range .Pages }}
         <ul class="archive__list">

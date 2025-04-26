@@ -3,6 +3,8 @@ theme = 'anatole'
 defaultContentLanguage = 'en'
 #enableGitInfo = true
 #sectionPagesMenu = 'main'
+summaryLength = 10
+mainSections = []
 
 [markup.goldmark.parser]
 wrapStandAloneImageWithinParagraph = false
