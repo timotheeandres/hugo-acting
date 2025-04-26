@@ -1,14 +1,8 @@
 baseURL = 'https://timotheeandr.es'
 theme = 'anatole'
 defaultContentLanguage = 'en'
-#enableGitInfo = true
-#sectionPagesMenu = 'main'
+enableGitInfo = true
 summaryLength = 10
-mainSections = []
 
-[markup.goldmark.parser]
-wrapStandAloneImageWithinParagraph = false
+mainSections = [] # To disable auto-display of "blog posts" on home
 
-  [markup.goldmark.parser.attribute]
-  block = true
-  title = true
