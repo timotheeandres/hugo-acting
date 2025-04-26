@@ -3,11 +3,11 @@ languageName = 'EN'
 languageCode = 'en'
 
   [en.params]
-  description = 'Actor and computer scientist'
+  description = 'Apprentice actor and voice actor'
 
 [fr]
 languageName = 'FR'
 languageCode = 'fr'
 
   [fr.params]
-  description = 'Acteur et informaticien'
+  description = 'Apprenti acteur et doubleur'
