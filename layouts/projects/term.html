@@ -11,7 +11,9 @@
     {{ end }}
 
     {{ with .Description }}
-      {{ . | $.RenderString (dict "display" "block") }}
+      <div class="post__content">
+        {{ . | $.RenderString (dict "display" "block") }}
+      </div>
     {{ end }}
 
     {{ range .Pages.GroupByDate "2006" }}
