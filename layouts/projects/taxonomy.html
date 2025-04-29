@@ -10,9 +10,9 @@
       <h1>{{ . }}</h1>
     {{ end }}
 
-    {{ range $firstLetter, $projects := partial "projects/GroupByTitleFirstLetter.html" . }}
-      <div class="archive__heading">{{ $firstLetter }}</div>
-      {{ range $projects }}
+    {{ range (partial "projects/GroupByTitleFirstLetter.html" .) }}
+      <div class="archive__heading">{{ .Key }}</div>
+      {{ range .Pages }}
         <ul class="archive__list">
           <li class="archive__list-item">
             {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}

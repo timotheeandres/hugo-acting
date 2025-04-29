@@ -8,4 +8,8 @@
     {{ $scratch.Add $firstLetter (slice .) }}
   {{ end }}
 {{ end }}
-{{ return $scratch.Values }}
+{{ $results := slice }}
+{{ range $firstLetter, $pages := $scratch.Values }}
+  {{ $results = $results | append (dict "Key" $firstLetter "Pages" $pages) }}
+{{ end }}
+{{ return $results }}
