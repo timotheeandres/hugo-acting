@@ -3,6 +3,8 @@
 
 # About me
 
+{{< figure src="me.jpg" alt="Picture of Timothée Andres" class="right" width="80%" >}}
+
 I am Timothée ANDRES, a {{< age year=1996 >}} years old actor in formation based in the region of Lausanne, Switzerland.
 I started off as a computer scientist, but I have been wanting for a while to explore a domain that always attracted me: voice acting.
 

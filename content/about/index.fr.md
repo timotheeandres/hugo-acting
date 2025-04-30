@@ -3,6 +3,8 @@
 
 # À propos de moi
 
+{{< figure src="me.jpg" alt="Photo de Timothée Andres" class="right" width="80%" >}}
+
 Je suis Timothée ANDRES, acteur en formation de {{< age year=1996 >}} ans basé dans la région de Lausanne en Suisse.
 J'ai commencé en tant qu'informaticien, mais j'ai désiré explorer un domaine qui m'a toujours attiré : le doublage.
 
