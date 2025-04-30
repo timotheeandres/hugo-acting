@@ -4,5 +4,5 @@ defaultContentLanguage = 'fr'
 enableGitInfo = true
 summaryLength = 10
 
-mainSections = [] # To disable auto-display of "blog posts" on home
+mainSections = ['projects']
 
