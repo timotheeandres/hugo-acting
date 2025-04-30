@@ -11,3 +11,5 @@ languageCode = 'fr'
 
   [fr.params]
   description = 'Apprenti acteur et doubleur'
+
+  indexdateformat='Mon 2 Jan 2006'
