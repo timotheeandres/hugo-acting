@@ -1,3 +1,4 @@
+{{- if hugo.IsProduction -}}
 User-agent: AI2Bot
 User-agent: Ai2Bot-Dolma
 User-agent: aiHitBot
@@ -55,4 +56,9 @@ User-agent: Timpibot
 User-agent: VelenPublicWebCrawler
 User-agent: Webzio-Extended
 User-agent: YouBot
-Disallow: /
+{{- else -}}
+User-agent: *
+{{ end }}
+{{- range .Pages -}}
+Disallow: {{ .RelPermalink }}
+{{ end }}
