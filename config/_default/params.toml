@@ -29,3 +29,5 @@ url = "mailto:acting@timotheeandr.es"
 #title = "Voice demo (coming soon...)"
 #url = "#"
 
+[taxonomyPartials]
+projects='taxonomy/projects.html'
