@@ -1,5 +1,5 @@
 +++
-date = '2025-03-30T21:08:17+02:00'
+date = '2025-03-30'
 title = 'Formation'
 toc = true
 +++

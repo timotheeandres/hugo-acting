@@ -1,5 +1,6 @@
 +++
-mainSectionsTitle='Mes derniers travaux :'
+date = '2025-05-02'
+mainSectionsTitle = 'Mes derniers travaux :'
 +++
 
 # Bienvenue sur mon site !

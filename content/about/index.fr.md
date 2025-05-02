@@ -1,7 +1,7 @@
 +++
+date = '2025-05-02'
+title = 'À propos de moi'
 +++
-
-# À propos de moi
 
 {{< figure src="me.jpg" alt="Photo de Timothée Andres" class="right" width="80%" >}}
 
