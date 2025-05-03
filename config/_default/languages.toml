@@ -3,13 +3,13 @@ languageName = 'EN'
 languageCode = 'en'
 
   [en.params]
-  description = 'Apprentice actor and voice actor'
+  description = 'Actor, voice actor and singer'
 
 [fr]
 languageName = 'FR'
 languageCode = 'fr'
 
   [fr.params]
-  description = 'Apprenti acteur et doubleur'
+  description = 'Acteur, doubleur et chanteur'
 
   indexdateformat='Mon 2 Jan 2006'
