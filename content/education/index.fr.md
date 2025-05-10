@@ -9,7 +9,7 @@ toc = true
 
 [Acting Line Studio](https://actinglinestudio.com/) est une école d'acting fondée par Ludovic Gossiaux en 2017. Avec ses studios à Lausanne et Genève, cette jeune école de théâtre et de cinéma est l'endroit parfait pour prendre la scène pour la première fois, entouré de coachs géniaux.
 
-J'étudie à Acting Line dans une formation de 3 ans afin d'apprendre à "accorder mon instrument", comme dit M. Gossiaux : que ressens-je à l'intérieur qui correspond à ce que je révèle, et vice-versa&nbsp;? Comment apprendre à jouer de mon instrument pour composer la mélodie que je désire&nbsp;?
+J'étudie à Acting Line dans une formation de 3 ans afin d'apprendre à "accorder mon instrument", comme dit M.&nbsp;Gossiaux : que ressens-je à l'intérieur qui correspond à ce que je révèle, et vice-versa&nbsp;? Comment apprendre à jouer de mon instrument pour composer la mélodie que je désire&nbsp;?
 
 À travers cette école, j'ai également l'opportunité de participer à des workshops et des masterclasses dirigées par de grandes personnes du monde du spectacle.
 
