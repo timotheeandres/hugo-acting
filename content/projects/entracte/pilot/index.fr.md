@@ -1,6 +1,6 @@
 +++
 date = '2024-11-21'
-title = "Entr'acte (pilot)"
+title = "Entr'acte (pilote)"
 projects = ["Entr'acte"]
 +++
 
