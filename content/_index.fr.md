@@ -5,8 +5,9 @@ mainSectionsTitle = 'Mes derniers travaux :'
 
 # Bienvenue sur mon site !
 
-Je suis acteur en formation, et je deviendrai un jour doubleur professionnel. J'étudie actuellement à Acting Line Studio à Lausanne.
+Je suis Timothée ANDRES, acteur en formation de {{< age year=1996 >}} ans actif dans la région de Lausanne en Suisse.
 
-N'hésitez pas à repasser régulièrement sur ce site, il se peut que de nouvelles pages apparaissent !
+J'ai travaillé avec [JingleJungle](https://www.jinglejungle.ch/en/) depuis que je suis enfant en tant que voix pour diverses pubs radio et télévision. Les années passant, j'ai réfléchi à l'idée de débuter une carrière dans le doublage professionnel, mais j'ai d'abord décidé de terminer mes études.
 
-Vous pouvez utiliser l'icône d'enveloppe si vous désirez me contacter par e-mail.
+Mon objectif à long terme est de travailler en tant que doubleur dans l'industrie de l'animation : j'adorerais prêter ma voix pour des films d'animations, des jeux vidéos ou d'autres projets. Je suis particulièrement impressionné par la puissance des doubleurs japonais.
+

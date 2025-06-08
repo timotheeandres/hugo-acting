@@ -16,9 +16,3 @@ name = 'Education'
 pageRef = '/education'
 weight = 3
 
-[[main]]
-identifier = 'about'
-name = 'About'
-pageRef = '/about'
-weight = 4
-
