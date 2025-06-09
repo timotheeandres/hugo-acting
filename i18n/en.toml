@@ -1,2 +1,25 @@
 ariaLanguage = 'Switch language to '
 noProjects = 'Stay tuned! Projects are coming soon.'
+news = 'news'
+duration = 'duration'
+today = 'today'
+education = 'education'
+career = 'career'
+voiceActing = 'voice acting'
+acting = 'acting'
+
+[presenter]
+  one = 'presenter'
+  other = 'presenters'
+[organizer]
+  one = 'organizer'
+  other = 'organizers'
+[category]
+  one = 'category'
+  other = 'categories'
+[workshop]
+  one = 'workshop'
+  other = 'workshops'
+[school]
+  one = 'school'
+  other = 'schools'

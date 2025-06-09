@@ -1,0 +1,35 @@
+{{ with .Resources.Get "workshops.yml" | unmarshal }}
+  {{ range $workshop := sort . "year" "desc" }}
+    <div>
+      <span class="workshop-year">{{ $workshop.year }}</span>
+      <div class="workshop">
+        {{ with $workshop.name }}
+          <p class="workshop-name">
+          {{ . }}
+          {{ with $workshop.url }}
+            <br/>
+            <a href="{{ . }}">{{ . }}</a>
+          {{ end }}
+          </p>
+        {{ end }}
+        <p>
+        {{ with $workshop.presenters }}
+          <b>{{ T "presenter" (len .) | humanize }}:</b> {{ delimit . ", " }}
+        {{ end }}
+        {{ with $workshop.organizers }}
+          <b>{{ T "organizer" (len .) | humanize }}:</b> {{ delimit . ", " }}
+        {{ end }}
+        {{ with $workshop.duration }}
+          <b>{{ T "duration" | humanize }}:</b> {{ . }}
+        {{ end }}
+        {{ with $workshop.categories }}
+          <b>{{ T "category" (len .) | humanize }}:</b>
+          {{ range $workshop.categories | sort }}
+            {{ partial "category-icon.html" . }}
+          {{ end }}
+        {{ end }}
+        </p>
+      </div>
+    </div>
+  {{ end }}
+{{ end }}

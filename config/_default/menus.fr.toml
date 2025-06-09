@@ -10,9 +10,3 @@ name = 'Projets'
 pageRef = '/projects'
 weight = 2
 
-[[main]]
-identifier = 'education'
-name = 'Formation'
-pageRef = '/education'
-weight = 3
-

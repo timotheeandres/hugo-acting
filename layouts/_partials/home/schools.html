@@ -1,0 +1,37 @@
+{{ with .Resources.Get "schools.yml" | unmarshal }}
+  {{ range $i, $school := sort . "years.end" "desc" }}
+    {{- if not $school.name -}}
+      {{- errorf "School %d does not have a name" $i -}}
+    {{- end -}}
+    <div>
+      <span class="school-years">
+        {{ with $school.years }}
+          {{ if not .start }}
+            {{ errorf "School %s does not have a start" $school.name }}
+          {{ else }}
+            {{ .start }} – {{ or .end (T "today" | humanize) }}
+          {{ end }}
+        {{ end }}
+      </span>
+      <div class="school">
+        {{ with $school.name }}
+          <p class="school-name">
+          {{ . }}
+          {{ with $school.url }}
+            <br/>
+            <a href="{{ . }}">{{ . }}</a>
+          {{ end }}
+          </p>
+        {{ end }}
+        <p>
+        {{ with $school.categories }}
+          <b>{{ T "category" (len .) | humanize }}:</b>
+          {{ range $school.categories | sort }}
+            {{ partial "category-icon.html" . }}
+          {{ end }}
+        {{ end }}
+        </p>
+      </div>
+    </div>
+  {{ end }}
+{{ end }}

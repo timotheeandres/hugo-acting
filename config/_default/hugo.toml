@@ -5,5 +5,3 @@ enableGitInfo = true
 summaryLength = 10
 enableRobotsTXT = true
 
-mainSections = ['projects']
-

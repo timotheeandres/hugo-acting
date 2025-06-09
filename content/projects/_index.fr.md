@@ -1,3 +1,4 @@
 +++
 title = 'Projets'
+kind = 'taxonomy'
 +++
