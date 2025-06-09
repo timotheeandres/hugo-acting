@@ -1,4 +1,3 @@
 +++
 title = 'Projets'
-kind = 'taxonomy'
 +++
