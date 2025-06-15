@@ -1,0 +1,39 @@
+{{ with .Resources.Get "acting.yml" | unmarshal }}
+  {{ range $i, $project := sort . "date" "desc" }}
+    {{- if not $project.name -}}
+      {{- errorf "Project %d does not have a name" $i -}}
+    {{- end -}}
+    {{- if not $project.date -}}
+      {{- errorf "Project %d does not have a date" $i -}}
+    {{- end -}}
+    <div>
+      <span class="project-date">
+        {{ dateFormat "Oct. 2006" $project.date }}
+      </span>
+      <div class="acting-project">
+        <p class="acting-project-name">
+        {{ $project.name }}
+        {{ with $project.url }}
+          <br/>
+          <a href="{{ . }}">{{ . }}</a>
+        {{ end }}
+        </p>
+        {{ with $project.description }}
+          <p class="acting-project-description">{{ . }}</p>
+        {{ end }}
+        <p>
+        {{ with $project.director }}
+          <b>{{ T "director" (len .) | humanize }}:</b> {{ .name }}
+        {{ end }}
+        {{ with $project.categories }}
+          <b>{{ T "category" (len .) | humanize }}:</b>
+          {{ range $project.categories | sort }}
+            {{ partial "category-icon.html" . }}
+          {{ end }}
+        {{ end }}
+        </p>
+        </p>
+      </div>
+    </div>
+  {{ end }}
+{{ end }}

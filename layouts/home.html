@@ -5,6 +5,7 @@
     </div>
   </div>
 
+  <!--
   <div id="news">
     {{ $mainSectionsPages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $paginator := .Paginate $mainSectionsPages }}
@@ -63,11 +64,12 @@
       </div>
     {{ end }}
   </div>
+  -->
 
   <div id="career" class="post {{ partial "animation-class.html" . }}">
     <h1>{{ T "career" | humanize }}</h1>
-    <h2>{{ T "voiceActing" | humanize }}</h2>
     <h2>{{ T "acting" | humanize }}</h2>
+    {{ partial "home/acting.html" . }}
   </div>
 
   <div id="education" class="post {{ partial "animation-class.html" . }}">

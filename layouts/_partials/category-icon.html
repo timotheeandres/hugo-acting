@@ -8,6 +8,8 @@
   {{- $icon = "fa-masks-theater" -}}
 {{- else if eq $cat "dubbing" -}}
   {{- $icon = "fa-microphone-lines" -}}
+{{- else -}}
+  {{- erroridf "unknown-category" (printf "Unknown category %s, cannot display icon" $cat) -}}
 {{- end -}}
 
 <i class="fas {{ $icon }}" title="{{ title . }}"></i>

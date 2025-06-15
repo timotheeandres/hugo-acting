@@ -8,7 +8,6 @@
     {{- $item := replace . "#" "%23" -}}
     {{- $item = replace $item "." "%2e" -}}
     {{- $link := ( printf "%s/%s/" $linkBase ( $item | urlize ) ) | relLangURL -}}
-    {{- $translatedEl := T (. | urlize) -}}
-    <a class="{{ $linkClass }}" href="{{ $link }}">{{- or $translatedEl . -}}</a>
+    <a class="{{ $linkClass }}" href="{{ $link }}">{{- . -}}</a>
   {{- end -}}
 </span>

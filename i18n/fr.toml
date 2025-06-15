@@ -15,6 +15,9 @@ acting = 'cinéma'
 [organizer]
   one = 'organisateur·trice'
   other = 'organisateurs·trice·s'
+[director]
+  one = 'réalisateur·trice'
+  other = 'réalisateurs·trices'
 [category]
   one = 'catégorie'
   other = 'catégories'
