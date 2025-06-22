@@ -27,3 +27,6 @@ acting = 'cinéma'
 [school]
   one = 'école'
   other = 'écoles'
+[role]
+  one = 'rôle'
+  other = 'rôles'

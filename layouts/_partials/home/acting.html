@@ -20,6 +20,11 @@
         {{ with $project.description }}
           <span class="description">{{ . }}</span>
         {{ end }}
+        {{ with $project.role }}
+          <span>
+            <b>{{ T "role" 1 | humanize }}:</b> {{ . }}
+          </span>
+        {{ end }}
         {{ with $project.director }}
           <span>
             <b>{{ T "director" (len .) | humanize }}:</b> {{ .name }}

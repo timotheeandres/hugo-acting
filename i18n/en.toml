@@ -26,3 +26,6 @@ acting = 'acting'
 [school]
   one = 'school'
   other = 'schools'
+[role]
+  one = 'role'
+  other = 'roles'
