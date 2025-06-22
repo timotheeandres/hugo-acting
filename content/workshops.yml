@@ -3,7 +3,7 @@
   year: 2025
   presenters:
     - "Cécile Bonardi"
-  duration: "15 hours"
+  duration: "15h"
   categories:
     - singing
   organizers:
@@ -13,7 +13,7 @@
   year: 2024
   presenters:
     - "Frédérique Amand"
-  duration: "14 hours"
+  duration: "14h"
   url: "https://actinglinestudio.com/workshop-masterclass-frederique-amand"
   categories:
     - acting
@@ -24,7 +24,7 @@
   year: 2024
   presenters:
     - "Cécile Bonardi"
-  duration: "3x12 hours"
+  duration: "3x12h"
   url: "https://actinglinestudio.com/module-voix-parlee-avec-cecile-bonardi"
   categories:
     - singing
