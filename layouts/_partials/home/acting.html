@@ -6,34 +6,34 @@
     {{- if not $project.date -}}
       {{- errorf "Project %d does not have a date" $i -}}
     {{- end -}}
-    <div>
-      <span class="project-date">
-        {{ dateFormat "Oct. 2006" $project.date }}
-      </span>
-      <div class="acting-project">
-        <p class="acting-project-name">
-        {{ $project.name }}
+    <section>
+      <header>
+        <span class="date">{{ dateFormat "Oct. 2006" $project.date }}</span>
+      </header>
+      <main>
+        <span class="name">{{ $project.name }}</span>
         {{ with $project.url }}
-          <br/>
-          <a href="{{ . }}">{{ . }}</a>
+          <span class="url">
+            <a href="{{ . }}">{{ . }}</a>
+          </span>
         {{ end }}
-        </p>
         {{ with $project.description }}
-          <p class="acting-project-description">{{ . }}</p>
+          <span class="description">{{ . }}</span>
         {{ end }}
-        <p>
         {{ with $project.director }}
-          <b>{{ T "director" (len .) | humanize }}:</b> {{ .name }}
+          <span>
+            <b>{{ T "director" (len .) | humanize }}:</b> {{ .name }}
+          </span>
         {{ end }}
         {{ with $project.categories }}
-          <b>{{ T "category" (len .) | humanize }}:</b>
-          {{ range $project.categories | sort }}
-            {{ partial "category-icon.html" . }}
-          {{ end }}
+          <span>
+            <b>{{ T "category" (len .) | humanize }}:</b>
+            {{ range $project.categories | sort }}
+              {{ partial "category-icon.html" . }}
+            {{ end }}
+          </span>
         {{ end }}
-        </p>
-        </p>
-      </div>
-    </div>
+      </main>
+    </section>
   {{ end }}
 {{ end }}

@@ -1,12 +1,10 @@
 [[main]]
-identifier = 'home'
 name = 'Accueil'
 pageRef = '/'
-weight = 1
+weight = 10
 
 [[main]]
-identifier = 'projects'
-name = 'Projets'
-pageRef = '/projects'
-weight = 2
+name = 'Actualités'
+pageRef = '/news'
+weight = 20
 

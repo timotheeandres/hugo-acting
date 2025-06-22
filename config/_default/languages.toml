@@ -13,3 +13,4 @@ languageCode = 'fr'
   description = 'Acteur et doubleur'
 
   indexdateformat='Mon 2 Jan 2006'
+  listdateformat='2 Jan'

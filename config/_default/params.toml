@@ -2,15 +2,11 @@
 
 title = 'Timothée Andres'
 author = 'Timothée Andres'
-copyright = 'Timothée Andres — 2025-{{ YEAR }}'
 profilePicture = 'images/profile.png'
 displayMode = 'dark'
 contentratio = 0.65
 disableTitleCapitalization = true
 localizedDates = true
-
-mainSections = ['']
-#mainSections = ['projects']
 
 [[socialIcons]]
 icon = "fas fa-envelope"
@@ -32,5 +28,3 @@ url = "mailto:acting@timotheeandr.es"
 #title = "Voice demo (coming soon...)"
 #url = "#"
 
-[taxonomyPartials]
-projects='taxonomy/projects.html'
