@@ -7,6 +7,7 @@ displayMode = 'dark'
 contentratio = 0.65
 disableTitleCapitalization = true
 localizedDates = true
+doNotLoadAnimations = true
 
 [[socialIcons]]
 icon = "fas fa-envelope"
