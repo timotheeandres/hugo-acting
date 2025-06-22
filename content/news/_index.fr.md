@@ -1,4 +1,3 @@
 +++
 title = 'Actualités'
-url = 'actualites'
 +++
