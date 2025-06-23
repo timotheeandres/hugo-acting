@@ -9,6 +9,8 @@ disableTitleCapitalization = true
 localizedDates = true
 doNotLoadAnimations = true
 
+images = ["images/profile.png"]
+
 [[socialIcons]]
 icon = "fas fa-envelope"
 title = "E-mail"
