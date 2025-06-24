@@ -6,10 +6,10 @@
 
 # Informations personnelles
 
-**Taille :** 186cm
+**Taille&nbsp;:** 186cm
 
-**Langues :** français (langue maternelle), anglais (excellent)
+**Langues&nbsp;:** français (langue maternelle), anglais (excellent)
 
-**Autre profession :** Programmeur
+**Autre profession&nbsp;:** Programmeur
 
-**Hobbies :** Jeux de rôle sur table et grandeur nature, jeux vidéos, Magic: The Gathering
+**Hobbies&nbsp;:** Jeux de rôle sur table et grandeur nature, jeux vidéos, Magic:&nbsp;The Gathering

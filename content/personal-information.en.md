@@ -12,4 +12,4 @@
 
 **Other profession:** Programmer
 
-**Hobbies:** Tabletop and live-action roleplay, video games, Magic: The Gathering
+**Hobbies:** Tabletop and live-action roleplay, video games, Magic:&nbsp;The Gathering
