@@ -1,6 +1,7 @@
 @use 'modules/config' as conf;
 
 section#photos {
+  margin: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
