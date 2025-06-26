@@ -1,3 +1,4 @@
 +++
 layout = "photos"
+title = "Photos"
 +++
