@@ -4,6 +4,7 @@ section#photos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 
   img {
     object-fit: cover;
@@ -23,6 +24,11 @@ section#photos {
 
     @include conf.widescreen {
       flex-basis: 33%;
+      max-width: 67%;
+
+      &.landscape {
+        flex-basis: 67%;
+      }
     }
   }
 }
