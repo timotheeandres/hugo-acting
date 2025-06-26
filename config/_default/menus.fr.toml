@@ -8,3 +8,8 @@ name = 'Actualités'
 pageRef = '/news'
 weight = 20
 
+[[main]]
+name = 'Photos'
+pageRef = '/photos'
+weight = 30
+
