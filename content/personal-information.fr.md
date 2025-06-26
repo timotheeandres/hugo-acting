@@ -8,7 +8,7 @@
 
 **Taille&nbsp;:** 186cm
 
-**Langues&nbsp;:** français (langue maternelle), anglais (excellent)
+**Langues&nbsp;:** Français (langue maternelle), anglais (excellent)
 
 **Autre profession&nbsp;:** Programmeur
 
