@@ -1,7 +1,9 @@
 {{ define "main" }}
   <section id="photos">
     {{- range .Resources.ByType "image" -}}
-      <img src="{{ .RelPermalink }}" {{- if ge .Width .Height -}} class="landscape" {{- end -}}/>
+      {{ with .Filter images.AutoOrient }}
+        <img src="{{ .RelPermalink }}" {{- if ge .Width .Height -}} class="landscape" {{- end -}}/>
+      {{ end }}
     {{- else -}}
       {{ errorf (printf "No image found for page '%s' (%s), please try again later." .Title .RelPermalink) }}
     {{- end -}}
