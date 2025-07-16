@@ -7,7 +7,7 @@ today = "aujourd'hui"
 education = 'formation'
 career = 'parcours'
 voiceActing = 'doublage'
-acting = 'cinéma'
+acting = 'acting'
 
 [presenter]
   one = 'présentateur·trice'
