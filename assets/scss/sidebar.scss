@@ -1,0 +1,14 @@
+@use 'modules/color_theme' as color;
+
+div.sidebar {
+  @include color.themed() {
+    background-color: color.t('primary-lighter');
+  }
+
+  img[class$="profileimage"] {
+    width: inherit;
+    height: inherit;
+    max-width: 90%;
+  }  
+}
+

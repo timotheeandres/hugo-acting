@@ -1,0 +1,71 @@
+@use 'modules/color_theme' as color;
+@use 'modules/config' as conf;
+
+$left-shift: 30px;
+
+#home {
+  > * {
+    @include conf.desktop {
+      padding-left: $left-shift;
+    }
+
+    > h1 {
+      display: inline;
+      text-decoration-line: underline;
+
+      @include conf.desktop {
+        margin-left: -$left-shift;
+      }
+    }
+
+    > section {
+      padding-left: $left-shift;
+
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      box-sizing: border-box;
+
+      @include conf.desktop {
+        flex-direction: row;
+      }
+
+
+      > header {
+        font-style: italic;
+        border-bottom: 0;
+
+        @include conf.desktop {
+          margin-left: -$left-shift;
+          text-align: right;
+          width: 20%;
+        }
+      }
+
+      > main {
+        .url {
+          margin-bottom: 8px;
+
+          a {
+            @include color.themed() {
+              color: color.t('primary-light');
+            }
+          }
+        }
+
+        span.name {
+          font-size: 110%;
+          margin-bottom: 8px;
+        }
+
+        span {
+          font-size: 90%;
+          display: block;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+}
+

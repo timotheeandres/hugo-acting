@@ -1,3 +1,32 @@
-ariaLanguage = 'lang-'
+ariaLanguage = 'Changer langage vers '
 home = 'Accueil'
+noProjects = 'Revenez plus tard ! Les projets seront bientôt là.'
+news = 'Actualités'
+duration = 'durée'
+today = "aujourd'hui"
+education = 'formation'
+career = 'parcours'
+voiceActing = 'doublage'
+acting = 'acting'
 
+[presenter]
+  one = 'présentateur·trice'
+  other = 'présentateur·trice·s'
+[organizer]
+  one = 'organisateur·trice'
+  other = 'organisateurs·trice·s'
+[director]
+  one = 'réalisateur·trice'
+  other = 'réalisateurs·trices'
+[category]
+  one = 'catégorie'
+  other = 'catégories'
+[workshop]
+  one = 'workshop'
+  other = 'workshops'
+[school]
+  one = 'école'
+  other = 'écoles'
+[role]
+  one = 'rôle'
+  other = 'rôles'

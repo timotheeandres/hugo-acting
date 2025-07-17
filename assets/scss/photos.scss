@@ -1,0 +1,36 @@
+@use 'modules/config' as conf;
+
+section#photos {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    flex-grow: 1;
+    min-width: 0;
+
+    &.landscape {
+      flex-basis: 100%;
+    }
+
+    flex-basis: 100%;
+
+    @include conf.desktop {
+      flex-basis: 50%;
+    }
+
+    @include conf.widescreen {
+      flex-basis: 33%;
+      max-width: 67%;
+
+      &.landscape {
+        flex-basis: 67%;
+      }
+    }
+  }
+}
+

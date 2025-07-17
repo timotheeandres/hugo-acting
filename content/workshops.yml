@@ -1,0 +1,32 @@
+- 
+  name: "Stage de chant"
+  year: 2025
+  presenters:
+    - "Cécile Bonardi"
+  duration: "15h"
+  categories:
+    - singing
+  organizers:
+    - "Acting Line Studio"
+- 
+  name: '"Focus self-tape"'
+  year: 2024
+  presenters:
+    - "Frédérique Amand"
+  duration: "14h"
+  url: "https://actinglinestudio.com/workshop-masterclass-frederique-amand"
+  categories:
+    - acting
+  organizers:
+    - "Acting Line Studio"
+- 
+  name: '"De la voix chantée à la voix parlée"'
+  year: 2024
+  presenters:
+    - "Cécile Bonardi"
+  duration: "3x12h"
+  url: "https://actinglinestudio.com/module-voix-parlee-avec-cecile-bonardi"
+  categories:
+    - singing
+  organizers:
+    - "Acting Line Studio"

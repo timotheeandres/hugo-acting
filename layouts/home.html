@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <div id="home">
+    {{ with .GetPage "personal-information" }}
+      <div id="personal-data" class="post {{ partial "animation-class.html" . }}">
+        {{ .Content }}
+      </div>
+    {{ end }}
+
+    <div id="career" class="post {{ partial "animation-class.html" . }}">
+      <h1 class="left-unshift">{{ T "career" | humanize }}</h1>
+      <h2>{{ T "acting" | humanize }}</h2>
+      {{ partial "home/acting.html" . }}
+    </div>
+
+    <div id="education" class="post {{ partial "animation-class.html" . }}">
+      <h1 class="left-unshift">{{ T "education" | humanize }}</h1>
+      <h2>{{ T "school" | humanize }}</h2>
+      {{ partial "home/schools.html" . }}
+      <h2>{{ T "workshop" | humanize }}</h2>
+      {{ partial "home/workshops.html" . }}
+    </div>
+  </div>
+{{ end }}

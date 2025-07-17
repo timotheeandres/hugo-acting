@@ -1,0 +1,15 @@
+{{- $icon := "fa-question" -}}
+{{- $cat := lower . -}}
+{{- if eq $cat "singing" -}}
+  {{- $icon = "fa-music" -}}
+{{- else if eq $cat "acting" -}}
+  {{- $icon = "fa-film" -}}
+{{- else if eq $cat "theater" -}}
+  {{- $icon = "fa-masks-theater" -}}
+{{- else if eq $cat "dubbing" -}}
+  {{- $icon = "fa-microphone-lines" -}}
+{{- else -}}
+  {{- erroridf "unknown-category" (printf "Unknown category %s, cannot display icon" $cat) -}}
+{{- end -}}
+
+<i class="fas {{ $icon }}" title="{{ title . }}"></i>

@@ -3,11 +3,14 @@ languageName = 'EN'
 languageCode = 'en'
 
   [en.params]
-  description = 'From computer whisperer to voice actor'
+  description = 'Actor and voice actor'
 
 [fr]
 languageName = 'FR'
 languageCode = 'fr'
 
   [fr.params]
-  description = 'De computeur-souffleur à voix-acteur'
+  description = 'Acteur et doubleur'
+
+  indexdateformat='Mon 2 Jan 2006'
+  listdateformat='2 Jan'

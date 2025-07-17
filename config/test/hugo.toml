@@ -1,0 +1,2 @@
+baseURL = 'https://7ep2adc6.timotheeandr.es'
+publishDir = '/var/www/test/timotheeandr.es'
