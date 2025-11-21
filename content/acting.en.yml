@@ -1,8 +1,29 @@
-- 
-  name: "Entr'acte (pilot)"
-  date: "2024-11-21"
-  role: "Extra"
+-
+  name: "Showcase video for Nexamedic"
+  date: "2025-08-26"
+  urls:
+    - "https://www.nexamedic.ch/"
+    - "https://youtu.be/89_JqYup5NA"
+  categories:
+    - ad
+    - acting
+  producers:
+    - "Fullframe Creative"
+-
+  name: "Shadow of Lies"
+  dates:
+    start: "2025-08-24"
+    end: "2025-08-30"
+  roles:
+    - "Kom"
   categories:
     - acting
-  director:
-    name: "Dasha Sokolova"
+  directors:
+    - "Nelvis Ateh"
+-
+  name: "Entr'acte (pilot)"
+  date: "2024-11-21"
+  categories:
+    - acting
+  directors:
+    - "Dasha Sokolova"

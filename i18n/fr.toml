@@ -18,6 +18,9 @@ acting = 'acting'
 [director]
   one = 'réalisateur·trice'
   other = 'réalisateurs·trices'
+[producer]
+  one = 'producteur·trice'
+  other = 'producteurs·trices'
 [category]
   one = 'catégorie'
   other = 'catégories'

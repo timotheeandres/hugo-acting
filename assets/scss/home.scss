@@ -11,7 +11,7 @@ $left-shift: 30px;
 
     > h1 {
       display: inline;
-      text-decoration-line: underline;
+//      text-decoration-line: underline;
 
       @include conf.desktop {
         margin-left: -$left-shift;
@@ -26,6 +26,8 @@ $left-shift: 30px;
       gap: 14px;
       width: 100%;
       box-sizing: border-box;
+
+      margin-bottom: 1em;
 
       @include conf.desktop {
         flex-direction: row;
