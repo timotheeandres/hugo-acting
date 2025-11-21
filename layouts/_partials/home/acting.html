@@ -51,9 +51,9 @@
             <b>{{ T "director" (len .) | humanize }}:</b> {{ delimit . ", " }}
           </span>
         {{ end }}
-        {{ with $project.producer }}
+        {{ with $project.producers }}
           <span>
-            <b>{{ T "producer" (len .) | humanize }}:</b> {{ .name }}
+            <b>{{ T "producer" (len .) | humanize }}:</b> {{ delimit . ", " }}
           </span>
         {{ end }}
         {{ with $project.categories }}
