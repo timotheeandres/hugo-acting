@@ -1,4 +1,18 @@
 -
+  name: >
+    "De la scène à l'écran"
+  dates:
+    start: "2025-11-21"
+  presenters:
+    - "Alain Berliner"
+  duration: "140h"
+  urls:
+    - "https://actinglinestudio.com/module-scene-ecran/"
+  categories:
+    - acting
+  organizers:
+    - "Acting Line Studio"
+-
   name: "Stage de chant"
   date: "2025-04-20"
   presenters:

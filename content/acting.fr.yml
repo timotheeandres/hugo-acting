@@ -1,4 +1,26 @@
 -
+  name: "Vidéo de présentation pour Nexamedic"
+  date: "2025-08-26"
+  urls:
+    - "https://www.nexamedic.ch/"
+    - "https://youtu.be/89_JqYup5NA"
+  categories:
+    - ad
+    - acting
+  producers:
+    - "Fullframe Creative"
+-
+  name: "Shadow of Lies"
+  dates:
+    start: "2025-08-24"
+    end: "2025-08-30"
+  roles:
+    - "Kom"
+  categories:
+    - acting
+  directors:
+    - "Nelvis Ateh"
+-
   name: "Entr'acte (pilote)"
   date: "2024-11-21"
   categories:
