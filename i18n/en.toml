@@ -17,6 +17,9 @@ acting = 'acting'
 [director]
   one = 'director'
   other = 'directors'
+[producer]
+  one = 'producer'
+  other = 'producers'
 [category]
   one = 'category'
   other = 'categories'

@@ -1,13 +1,32 @@
 {{ with .Resources.Get "workshops.yml" | unmarshal }}
-  {{ range $workshop := sort . "year" "desc" }}
+  {{ range $workshop := . }}
     <section>
       <header>
-        <span class="date">{{ $workshop.year }}</span>
+        {{ with $workshop.date }}
+          {{ with try (dateFormat "Jan 2006" .) }}
+            {{ with .Value }}
+              <span class="date">{{ . }}</span>
+            {{ else }}
+              <span class="date">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        {{ else with $workshop.dates }}
+          {{ if not .start }}
+            {{ errorf "Project %s does not have a date start" $workshop.name }}
+          {{ end }}
+          {{ $start := dateFormat "Jan 2006" .start }}
+          {{ $end := or (and .end (dateFormat "Jan 2006" .end)) (T "today" | humanize) }}
+          {{ if eq $start $end }}
+            {{ $start }}
+          {{ else }}
+            {{ $start }} – {{ $end }}
+          {{ end }}
+        {{ end }}
       </header>
       <main class="workshop">
         {{ with $workshop.name }}
           <span class="name">{{ . }}</span>
-          {{ with $workshop.url }}
+          {{ range $workshop.urls }}
             <span class="url">
               <a href="{{ . }}">{{ . }}</a>
             </span>
@@ -31,12 +50,11 @@
         {{ with $workshop.categories }}
           <span class="categories">
             <b>{{ T "category" (len .) | humanize }}:</b>
-            {{ range $workshop.categories | sort }}
+            {{ range $workshop.categories }}
               {{ partial "category-icon.html" . }}
             {{ end }}
           </span>
         {{ end }}
-        </p>
       </main>
     </section>
   {{ end }}

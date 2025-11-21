@@ -1,5 +1,5 @@
 {{ with .Resources.Get "schools.yml" | unmarshal }}
-  {{ range $i, $school := sort . "years.end" "desc" }}
+  {{ range $i, $school := . }}
     {{- if not $school.name -}}
       {{- errorf "School %d does not have a name" $i -}}
     {{- end -}}
@@ -9,6 +9,8 @@
           {{ with $school.years }}
             {{ if not .start }}
               {{ errorf "School %s does not have a start" $school.name }}
+            {{ else if eq .start .end }}
+              {{ .start }}
             {{ else }}
               {{ .start }} – {{ or .end (T "today" | humanize) }}
             {{ end }}
@@ -18,7 +20,7 @@
       <main>
         {{ with $school.name }}
           <span class="name">{{ . }}</span>
-          {{ with $school.url }}
+          {{ range $school.urls }}
             <span class="url">
               <a href="{{ . }}">{{ . }}</a>
             </span>
@@ -27,7 +29,7 @@
         <span class="categories">
           {{ with $school.categories }}
             <b>{{ T "category" (len .) | humanize }}:</b>
-            {{ range $school.categories | sort }}
+            {{ range $school.categories }}
               {{ partial "category-icon.html" . }}
             {{ end }}
           {{ end }}
