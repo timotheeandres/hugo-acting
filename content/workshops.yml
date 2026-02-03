@@ -1,4 +1,18 @@
 -
+  name: '"De la voix chantée à la voix parlée"'
+  dates:
+    start: "2026-01-16"
+    end: "2026-06-29"
+  presenters:
+    - "Cécile Bonardi"
+  duration: "36h"
+  urls:
+    - "https://actinglinestudio.com/module-voix-parlee-avec-cecile-bonardi"
+  categories:
+    - singing
+  organizers:
+    - "Acting Line Studio"
+-
   name: >
     "De la scène à l'écran"
   dates:
