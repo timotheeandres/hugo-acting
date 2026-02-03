@@ -7,6 +7,7 @@ education = 'education'
 career = 'career'
 voiceActing = 'voice acting'
 acting = 'acting'
+ads = 'ads'
 
 [presenter]
   one = 'presenter'
@@ -32,3 +33,6 @@ acting = 'acting'
 [role]
   one = 'role'
   other = 'roles'
+[client]
+  one = 'client'
+  other = 'clients'

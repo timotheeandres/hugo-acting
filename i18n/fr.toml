@@ -8,6 +8,7 @@ education = 'formation'
 career = 'parcours'
 voiceActing = 'doublage'
 acting = 'acting'
+ads = 'publicités'
 
 [presenter]
   one = 'présentateur·trice'
@@ -33,3 +34,6 @@ acting = 'acting'
 [role]
   one = 'rôle'
   other = 'rôles'
+[client]
+  one = 'client'
+  other = 'clients'

@@ -10,6 +10,8 @@
   {{- $icon = "fa-microphone-lines" -}}
 {{- else if eq $cat "ad" -}}
   {{- $icon = "fa-rectangle-ad" -}}
+{{- else if eq $cat "radio" -}}
+  {{- $icon = "fa-radio" -}}
 {{- else -}}
   {{- erroridf "unknown-category" (printf "Unknown category %s, cannot display icon" $cat) -}}
 {{- end -}}

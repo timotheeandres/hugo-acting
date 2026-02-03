@@ -1,0 +1,65 @@
+{{ with .Resources.Get "ads.yml" | unmarshal }}
+  {{ range $i, $ad := . }}
+    {{- if not $ad.name -}}
+      {{- errorf "Ad %d does not have a name" $i -}}
+    {{- end -}}
+    {{- if and (not $ad.date) (not $ad.dates) -}}
+      {{- errorf "Ad %d does not have a date" $i -}}
+    {{- end -}}
+    <section>
+      <header>
+        {{ with $ad.date }}
+          {{ with try (dateFormat "Jan 2006" .) }}
+            {{ with .Value }}
+              <span class="date">{{ . }}</span>
+            {{ else }}
+              <span class="date">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        {{ else with $ad.dates }}
+          {{ if not .start }}
+            {{ errorf "Ad %s does not have a date start" $ad.name }}
+          {{ end }}
+          {{ $start := dateFormat "Jan 2006" .start }}
+          {{ $end := or (and .end (dateFormat "Jan 2006" .end)) (T "today" | humanize) }}
+          {{ if eq $start $end }}
+            {{ $start }}
+          {{ else }}
+            {{ $start }} – {{ $end }}
+          {{ end }}
+        {{ end }}
+      </header>
+      <main>
+        <span class="name">{{ $ad.name }}</span>
+        {{ range $ad.urls }}
+          <span class="url">
+            <a href="{{ . }}">{{ . }}</a>
+          </span>
+        {{ end }}
+        {{ range $ad.youtube }}
+        {{ end }}
+        {{ with $ad.description }}
+          <span class="description">{{ . }}</span>
+        {{ end }}
+        {{ with $ad.roles }}
+          <span>
+            <b>{{ T "role" (len .) | humanize }}:</b> {{ delimit . ", " }}
+          </span>
+        {{ end }}
+        {{ with $ad.clients }}
+          <span>
+            <b>{{ T "client" (len .) | humanize }}:</b> {{ delimit . ", " }}
+          </span>
+        {{ end }}
+        {{ with $ad.categories }}
+          <span>
+            <b>{{ T "category" (len .) | humanize }}:</b>
+            {{ range $ad.categories }}
+              {{ partial "category-icon.html" . }}
+            {{ end }}
+          </span>
+        {{ end }}
+      </main>
+    </section>
+  {{ end }}
+{{ end }}
