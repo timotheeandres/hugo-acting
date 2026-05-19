@@ -18,10 +18,10 @@ ads = 'publicités'
   other = 'organisateurs·trice·s'
 [director]
   one = 'réalisateur·trice'
-  other = 'réalisateurs·trices'
+  other = 'réalisateur·trice·s'
 [producer]
   one = 'producteur·trice'
-  other = 'producteurs·trices'
+  other = 'producteur·trice·s'
 [category]
   one = 'catégorie'
   other = 'catégories'

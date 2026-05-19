@@ -1,13 +1,15 @@
 [en]
-languageName = 'EN'
-languageCode = 'en'
+locale = 'en-US'
+label = 'EN'
+weight = 2
 
   [en.params]
   description = 'Actor and voice actor'
 
 [fr]
-languageName = 'FR'
-languageCode = 'fr'
+locale = 'fr-CH'
+label = 'FR'
+weight = 1
 
   [fr.params]
   description = 'Acteur et doubleur'
