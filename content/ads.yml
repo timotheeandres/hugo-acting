@@ -1,4 +1,13 @@
 -
+  name: "Migros – Tout pour l'été du football : commentateur"
+  date: "2026-05-21"
+  urls:
+    - "https://youtu.be/OCGvhpuIbPQ"
+  categories:
+    - tv
+  clients:
+    - "Migros"
+-
   name: "McDonalds – Happy Meal F.R.I.E.N.D.S"
   date: "2026-01-07"
   urls:
